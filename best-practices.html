@@ -9,6 +9,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
 <style>
+  .cite {
+    font-size: 0.78rem;
+    color: var(--ink-soft);
+    font-style: italic;
+    margin-left: 0.3rem;
+  }
   .bp-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -20,25 +26,14 @@
     border-radius: 8px;
     padding: 1.4rem;
     transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
-    cursor: default;
   }
   .bp-card:hover {
     border-color: var(--red);
     transform: translateY(-3px);
     box-shadow: 0 12px 28px rgba(0,0,0,0.07);
   }
-  .bp-card-icon {
-    font-size: 1.4rem;
-    margin-bottom: 0.6rem;
-  }
-  .bp-card h3 {
-    font-size: 1rem;
-    margin-bottom: 0.4rem;
-  }
-  .bp-card p {
-    font-size: 0.88rem;
-    margin: 0;
-  }
+  .bp-card h3 { font-size: 1rem; margin-bottom: 0.4rem; }
+  .bp-card p { font-size: 0.88rem; margin: 0; }
   .principle-row {
     display: flex;
     gap: 1rem;
@@ -66,8 +61,6 @@
 </head>
 <body>
 
-<div id="progress-bar"></div>
-
 <nav>
   <div class="nav-inner">
     <a class="nav-logo" href="index.html"><span>♠</span> War: The Card Game</a>
@@ -88,45 +81,53 @@
 <section>
   <div class="section-label">Pillar 1</div>
   <h2>Instructional Writing</h2>
-  <p>Good instructions are not just a list of steps. They anticipate what the reader needs at every moment, answer their questions before they ask them, and make it easy to act on each direction immediately.</p>
+  <p>Readers judge the quality of instructions based on how easily they can use them to perform their tasks (Ch. 27, p. 458). Every writing decision in this guide was made with that standard in mind.</p>
 
   <div class="principle-row">
-    <div class="principle-icon">🎯</div>
+    <div class="principle-icon">❓</div>
     <div class="principle-body">
-      <h3>Answer the six reader questions</h3>
-      <p>Every set of instructions should address what the instructions help the reader do, what they need to know beforehand, what materials are required, what exactly to do at each step, and how to recover from mistakes. This guide is organized around those questions, with the Overview, Setup, Play, War, and End sections each handling a distinct part of the reader's task.</p>
+      <h3>Answer the six reader questions <span class="cite">(Ch. 27, p. 458)</span></h3>
+      <p>Nearly all readers bring the same six questions to instructions: what will this help me do, what do I need to know beforehand, what materials do I need, what exactly do I do, and how do I fix something that goes wrong. This guide is structured to answer all six, with each section handling a distinct part of the reader's task.</p>
     </div>
   </div>
 
   <div class="principle-row">
     <div class="principle-icon">📋</div>
     <div class="principle-body">
-      <h3>Use the imperative mood and active voice</h3>
-      <p>Every direction in this guide is written as a direct command: "Flip your top card," "Compare the two cards," "Award the cards." This removes ambiguity and reduces the reading time between steps, which matters when a reader is bouncing back and forth between the instructions and the task.</p>
+      <h3>Use the active voice and imperative mood <span class="cite">(Ch. 27, p. 465)</span></h3>
+      <p>Active, imperative verbs give commands directly and leave no room for interpretation. Every direction in this guide follows that principle: "Flip your top card," "Compare the two cards," "Award the cards." The result is less time spent reading and more time spent doing.</p>
     </div>
   </div>
 
   <div class="principle-row">
     <div class="principle-icon">1️⃣</div>
     <div class="principle-body">
-      <h3>One action per step</h3>
-      <p>Each numbered step contains exactly one action. Bundling multiple actions into a single step makes it easy for readers to miss something. Separating them visually and numbering them clearly allows readers to track their place and return to the right step after looking away.</p>
+      <h3>One action per step, number in its own column <span class="cite">(Ch. 27, p. 466)</span></h3>
+      <p>Readers easily overlook a direction tucked in with another rather than given its own number. Putting step numbers in a separate column also keeps them easy to spot when a reader looks back after performing an action. Every step in this guide contains one action, and the step number sits in its own circle to the left of the content.</p>
     </div>
   </div>
 
   <div class="principle-row">
     <div class="principle-icon">⚠️</div>
     <div class="principle-body">
-      <h3>Place warnings before the relevant action</h3>
-      <p>A warning that appears after a step is useless — the reader has already acted. The Joker warning in the Setup section appears before Step 1, and the insufficient-cards warning in the War section appears before the step it applies to. Readers must see the caution before they have the chance to make the mistake.</p>
+      <h3>Place warnings before the relevant action <span class="cite">(Ch. 27, p. 464)</span></h3>
+      <p>A warning discovered after performing a step is too late to help. The Joker warning appears before Step 1 and the insufficient-cards warning appears before the step where that problem arises. Both callouts name the issue and tell the reader what to do about it (Ch. 27, p. 464).</p>
     </div>
   </div>
 
   <div class="principle-row">
     <div class="principle-icon">🖼️</div>
     <div class="principle-body">
-      <h3>Support steps with visuals</h3>
-      <p>Words cannot always show what a result should look like or how to perform an action. The example card comparisons in the Play section let readers immediately see what a winning round looks like, without having to interpret a written description. Visuals are placed directly adjacent to the step they support.</p>
+      <h3>Use graphics to show what words cannot <span class="cite">(Ch. 27, p. 467)</span></h3>
+      <p>Graphics can show where things are, how to perform steps, and what a result should look like — things words alone cannot convey as efficiently. The example card comparisons in the Play section show a completed round visually rather than describing it. Visuals are placed directly beside the steps they support so readers can coordinate both easily.</p>
+    </div>
+  </div>
+
+  <div class="principle-row">
+    <div class="principle-icon">🗂️</div>
+    <div class="principle-body">
+      <h3>Group steps under action-oriented headings <span class="cite">(Ch. 27, p. 467)</span></h3>
+      <p>Dividing instructions into chunks under headings that use participles rather than nouns makes procedures feel manageable and scannable. The four parts of this guide follow that structure: "Setting Up the Game," "Playing a Round," "Resolving a Tie," and "Ending the Game." Readers who only need one section can find it without reading the rest.</p>
     </div>
   </div>
 </section>
@@ -135,39 +136,40 @@
 <section>
   <div class="section-label">Pillar 2</div>
   <h2>Reader-Centered Writing</h2>
-  <p>Reader-centered writing starts with audience analysis. Every word, heading, and design choice in this guide reflects decisions made about who is reading and what they need — not what the writers wanted to say.</p>
+  <p>Good instructions have both usefulness goals and persuasive goals (Ch. 27, p. 459). Usefulness ensures readers can complete the task; persuasion ensures they want to read in the first place. Both shaped every decision in this guide.</p>
 
   <div class="bp-grid">
+
     <div class="bp-card">
-      <div class="bp-card-icon">👥</div>
-      <h3>Know your audience</h3>
-      <p>This guide targets complete beginners of all ages. No prior knowledge of card games is assumed. Game-specific terms like "draw pile" and "battle card" are defined in context the first time they appear, so readers are never left guessing.</p>
+      <h3>Identify your audience <span class="cite">(Ch. 27, p. 462)</span></h3>
+      <p>Readers want to know whether instructions are directed at people like them. This guide targets beginners of all ages with no assumed prior knowledge. Game-specific terms are defined in context the first time they appear.</p>
     </div>
+
     <div class="bp-card">
-      <div class="bp-card-icon">💬</div>
-      <h3>Write in plain language</h3>
-      <p>Sentences are kept short and jargon-free. Technical terms are only used when necessary and always explained. The goal is for a six-year-old and an adult to be able to follow the same set of instructions without confusion.</p>
+      <h3>Write clearly and succinctly <span class="cite">(Ch. 27, p. 460)</span></h3>
+      <p>More words make more work for readers and raise the chance they stop reading altogether. Each step contains only the information needed to perform it, and supporting explanations are kept visually separate from the action itself (Ch. 27, p. 466).</p>
     </div>
+
     <div class="bp-card">
-      <div class="bp-card-icon">🔍</div>
-      <h3>Design for scanning, not reading</h3>
-      <p>Readers of instructions rarely read straight through from start to finish. They scan for their next step, check a detail, and return to the task. Section headings, numbered steps, and anchor-linked navigation all support this non-linear reading pattern.</p>
+      <h3>Design for non-linear reading <span class="cite">(Ch. 27, p. 459)</span></h3>
+      <p>Instruction readers read a step, look away to do it, then return to find the next one. They do not read straight through. The sticky nav, anchor links, numbered steps, and progress bar all support this back-and-forth pattern, keeping readers oriented at every point.</p>
     </div>
+
     <div class="bp-card">
-      <div class="bp-card-icon">🧪</div>
-      <h3>Test with real users</h3>
-      <p>This guide was reviewed by classmates during a peer walkthrough session on March 2. Observations from that session directly influenced revisions, including moving the Card Ranks section to the Overview and elevating the Joker warning to a prominent callout block.</p>
+      <h3>Test with real users <span class="cite">(Ch. 27, p. 460)</span></h3>
+      <p>Nothing beats watching your target audience actually use a draft. This guide was reviewed by classmates on March 2, and that session directly led to moving the Card Ranks to the Overview and elevating the Joker warning to a prominent callout block.</p>
     </div>
+
     <div class="bp-card">
-      <div class="bp-card-icon">✅</div>
-      <h3>Anticipate errors</h3>
-      <p>The Troubleshooting table and the Insufficient Cards scenarios in the War section address the specific points where readers are most likely to run into problems. Readers should never feel stuck without a clear path forward.</p>
+      <h3>Motivate readers to engage <span class="cite">(Ch. 27, p. 463)</span></h3>
+      <p>Many readers are tempted to skip instructions entirely. An inviting tone and attractive design can persuade them to engage. The hero section, overview grid, and interactive rank strip are designed to make this guide feel approachable before a reader has committed to a single step.</p>
     </div>
+
     <div class="bp-card">
-      <div class="bp-card-icon">🎬</div>
-      <h3>Offer multiple formats</h3>
-      <p>Some readers follow written steps more easily; others learn by watching. This guide provides both a written walkthrough and an instructional video with closed captions, ensuring accessibility for a wider range of users and learning preferences.</p>
+      <h3>Present branching steps clearly <span class="cite">(Ch. 27, p. 469)</span></h3>
+      <p>When instructions branch, describe the decision point first, then format both alternatives clearly rather than listing only one. The Insufficient Cards section does exactly that: Scenario A and Scenario B are labeled distinctly so readers can identify which applies at a glance.</p>
     </div>
+
   </div>
 </section>
 
@@ -175,53 +177,53 @@
 <section>
   <div class="section-label">Pillar 3</div>
   <h2>Document and Website Design</h2>
-  <p>Page design is not decoration. Every visual decision in this guide — font choice, spacing, color, layout — was made to help readers understand the content faster, locate information more easily, and feel confident using the site.</p>
+  <p>Readers see the visual design of a page before they read its content, and what they see powerfully affects whether they find it useful and trustworthy (Ch. 14, p. 261). Every visual decision in this guide responds to that reality.</p>
 
   <div class="principle-row">
     <div class="principle-icon">📐</div>
     <div class="principle-body">
-      <h3>Alignment creates organization</h3>
-      <p>All text elements align flush left within a consistent grid. Step numbers, step titles, and body text each occupy a defined column, creating visual relationships that let readers see the structure of each section at a glance rather than having to read every word to understand how things relate.</p>
+      <h3>Alignment signals organization <span class="cite">(Ch. 14, p. 267)</span></h3>
+      <p>Aligning related elements with one another lets readers see how information is organized at a glance. Step numbers, titles, and body text each occupy a defined column in this guide. Spanning section headings across the full content width also gives them added emphasis, as the textbook notes that extending items across columns is one way to highlight them (p. 268).</p>
     </div>
   </div>
 
   <div class="principle-row">
     <div class="principle-icon">🔲</div>
     <div class="principle-body">
-      <h3>Grouping shows relationships</h3>
-      <p>Less white space between a heading and the content it labels signals that they belong together. More white space between sections signals a break. The consistent use of spacing in the step list, callout blocks, and section dividers helps readers understand the hierarchy of information without thinking about it.</p>
+      <h3>Grouping shows relationships <span class="cite">(Ch. 14, p. 268)</span></h3>
+      <p>Readers interpret the distance between items as a signal of how closely related they are. Less space signals connection; more space signals separation. Using less space below a heading than above it places the heading in closer visual proximity to the content it labels (p. 269), a principle applied consistently to every section and step group in this guide.</p>
     </div>
   </div>
 
   <div class="principle-row">
     <div class="principle-icon">🔴</div>
     <div class="principle-body">
-      <h3>Contrast establishes hierarchy and focus</h3>
-      <p>Red is used consistently for labels, active navigation, warnings, and key accents. Black serif type is used for headings. Lighter gray body text recedes visually. This contrast system lets readers immediately distinguish between types of content, such as a section heading versus a step explanation versus a warning callout.</p>
+      <h3>Contrast establishes hierarchy and focus <span class="cite">(Ch. 14, p. 270)</span></h3>
+      <p>Nothing stands out when everything looks the same. Size, type treatment, color, and font are the four variables that create contrast (p. 270). Red is used consistently here for section labels, active nav states, and warning callouts, making high-priority content immediately visible without readers having to search for it.</p>
     </div>
   </div>
 
   <div class="principle-row">
     <div class="principle-icon">🔁</div>
     <div class="principle-body">
-      <h3>Repetition creates unity</h3>
-      <p>Every page in this site uses the same navigation bar, footer, font pairing, color palette, and callout styles. Readers who learn the design on the Overview page can immediately orient themselves on the Video or Team pages. Consistency reduces cognitive load and builds trust in the document.</p>
+      <h3>Repetition creates visual unity <span class="cite">(Ch. 14, p. 272)</span></h3>
+      <p>Repetition lets readers learn a document's structure so each new page feels immediately familiar. Every page on this site shares the same nav bar, footer, font pairing, color palette, and callout styles. A reader who understands the layout of the Overview page can orient themselves instantly on any other page without any extra effort.</p>
+    </div>
+  </div>
+
+  <div class="principle-row">
+    <div class="principle-icon">🌐</div>
+    <div class="principle-body">
+      <h3>Apply print design principles to web pages <span class="cite">(Ch. 27, p. 476)</span></h3>
+      <p>The same design strategies that make print documents usable make web pages usable too. A consistent design across all pages and the alignment, grouping, contrast, and repetition principles drawn from Chapter 14 together ensure this site is as intentionally designed as any printed manual.</p>
     </div>
   </div>
 
   <div class="principle-row">
     <div class="principle-icon">♿</div>
     <div class="principle-body">
-      <h3>Accessibility is a design requirement</h3>
-      <p>All images include descriptive alt text. The instructional video includes closed captions. Font sizes remain readable at default browser zoom. Color contrast between text and background meets legibility standards. Accessibility was treated as a baseline requirement, not an afterthought.</p>
-    </div>
-  </div>
-
-  <div class="principle-row">
-    <div class="principle-icon">📍</div>
-    <div class="principle-body">
-      <h3>Navigation supports non-linear use</h3>
-      <p>The sticky navigation bar, anchor links, and scroll-progress indicator all support the way real readers use instructional websites. A reader who wants to jump straight to the War section can do so in one click. The active link highlighting tells them exactly where they are in the document at all times.</p>
+      <h3>Select type that is easy to read <span class="cite">(Ch. 14, p. 274)</span></h3>
+      <p>Fonts with strong, distinct main lines are easier to read, and all-capital letters should be avoided for more than a few words since research shows they slow reading. This guide uses Playfair Display for headings and DM Sans for body text. Uppercase is reserved for short section labels only, not full sentences.</p>
     </div>
   </div>
 </section>
