@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>How to Play War — Best Practices</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<style>
+  .bp-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1.6rem;
+  }
+  .bp-card {
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: 1.4rem;
+    transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+    cursor: default;
+  }
+  .bp-card:hover {
+    border-color: var(--red);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.07);
+  }
+  .bp-card-icon {
+    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
+  }
+  .bp-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+  }
+  .bp-card p {
+    font-size: 0.88rem;
+    margin: 0;
+  }
+  .principle-row {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    padding: 1.4rem 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .principle-row:last-child { border-bottom: none; }
+  .principle-icon {
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    background: var(--red-soft);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+  .principle-body h3 { margin-bottom: 0.3rem; font-size: 1.05rem; }
+  .principle-body p { font-size: 0.92rem; margin: 0; }
+  @media (max-width: 680px) {
+    .bp-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div id="progress-bar"></div>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html"><span>♠</span> War: The Card Game</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Overview</a></li>
+      <li><a href="index.html#setup">Setup</a></li>
+      <li><a href="index.html#play">Play</a></li>
+      <li><a href="index.html#war">War</a></li>
+      <li><a href="video.html">Video</a></li>
+      <li><a href="best-practices.html" class="active">Best Practices</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="memo.html">Memo</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ════════════════════ INSTRUCTIONAL WRITING ══════════════════════ -->
+<section>
+  <div class="section-label">Pillar 1</div>
+  <h2>Instructional Writing</h2>
+  <p>Good instructions are not just a list of steps. They anticipate what the reader needs at every moment, answer their questions before they ask them, and make it easy to act on each direction immediately.</p>
+
+  <div class="principle-row">
+    <div class="principle-icon">🎯</div>
+    <div class="principle-body">
+      <h3>Answer the six reader questions</h3>
+      <p>Every set of instructions should address what the instructions help the reader do, what they need to know beforehand, what materials are required, what exactly to do at each step, and how to recover from mistakes. This guide is organized around those questions, with the Overview, Setup, Play, War, and End sections each handling a distinct part of the reader's task.</p>
+    </div>
+  </div>
+
+  <div class="principle-row">
+    <div class="principle-icon">📋</div>
+    <div class="principle-body">
+      <h3>Use the imperative mood and active voice</h3>
+      <p>Every direction in this guide is written as a direct command: "Flip your top card," "Compare the two cards," "Award the cards." This removes ambiguity and reduces the reading time between steps, which matters when a reader is bouncing back and forth between the instructions and the task.</p>
+    </div>
+  </div>
+
+  <div class="principle-row">
+    <div class="principle-icon">1️⃣</div>
+    <div class="principle-body">
+      <h3>One action per step</h3>
+      <p>Each numbered step contains exactly one action. Bundling multiple actions into a single step makes it easy for readers to miss something. Separating them visually and numbering them clearly allows readers to track their place and return to the right step after looking away.</p>
+    </div>
+  </div>
+
+  <div class="principle-row">
+    <div class="principle-icon">⚠️</div>
+    <div class="principle-body">
+      <h3>Place warnings before the relevant action</h3>
+      <p>A warning that appears after a step is useless — the reader has already acted. The Joker warning in the Setup section appears before Step 1, and the insufficient-cards warning in the War section appears before the step it applies to. Readers must see the caution before they have the chance to make the mistake.</p>
+    </div>
+  </div>
+
+  <div class="principle-row">
+    <div class="principle-icon">🖼️</div>
+    <div class="principle-body">
+      <h3>Support steps with visuals</h3>
+      <p>Words cannot always show what a result should look like or how to perform an action. The example card comparisons in the Play section let readers immediately see what a winning round looks like, without having to interpret a written description. Visuals are placed directly adjacent to the step they support.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ READER-CENTERED WRITING ══════════════════════ -->
+<section>
+  <div class="section-label">Pillar 2</div>
+  <h2>Reader-Centered Writing</h2>
+  <p>Reader-centered writing starts with audience analysis. Every word, heading, and design choice in this guide reflects decisions made about who is reading and what they need — not what the writers wanted to say.</p>
+
+  <div class="bp-grid">
+    <div class="bp-card">
+      <div class="bp-card-icon">👥</div>
+      <h3>Know your audience</h3>
+      <p>This guide targets complete beginners of all ages. No prior knowledge of card games is assumed. Game-specific terms like "draw pile" and "battle card" are defined in context the first time they appear, so readers are never left guessing.</p>
+    </div>
+    <div class="bp-card">
+      <div class="bp-card-icon">💬</div>
+      <h3>Write in plain language</h3>
+      <p>Sentences are kept short and jargon-free. Technical terms are only used when necessary and always explained. The goal is for a six-year-old and an adult to be able to follow the same set of instructions without confusion.</p>
+    </div>
+    <div class="bp-card">
+      <div class="bp-card-icon">🔍</div>
+      <h3>Design for scanning, not reading</h3>
+      <p>Readers of instructions rarely read straight through from start to finish. They scan for their next step, check a detail, and return to the task. Section headings, numbered steps, and anchor-linked navigation all support this non-linear reading pattern.</p>
+    </div>
+    <div class="bp-card">
+      <div class="bp-card-icon">🧪</div>
+      <h3>Test with real users</h3>
+      <p>This guide was reviewed by classmates during a peer walkthrough session on March 2. Observations from that session directly influenced revisions, including moving the Card Ranks section to the Overview and elevating the Joker warning to a prominent callout block.</p>
+    </div>
+    <div class="bp-card">
+      <div class="bp-card-icon">✅</div>
+      <h3>Anticipate errors</h3>
+      <p>The Troubleshooting table and the Insufficient Cards scenarios in the War section address the specific points where readers are most likely to run into problems. Readers should never feel stuck without a clear path forward.</p>
+    </div>
+    <div class="bp-card">
+      <div class="bp-card-icon">🎬</div>
+      <h3>Offer multiple formats</h3>
+      <p>Some readers follow written steps more easily; others learn by watching. This guide provides both a written walkthrough and an instructional video with closed captions, ensuring accessibility for a wider range of users and learning preferences.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════ DOCUMENT & WEBSITE DESIGN ══════════════════ -->
+<section>
+  <div class="section-label">Pillar 3</div>
+  <h2>Document and Website Design</h2>
+  <p>Page design is not decoration. Every visual decision in this guide — font choice, spacing, color, layout — was made to help readers understand the content faster, locate information more easily, and feel confident using the site.</p>
+
+  <div class="principle-row">
+    <div class="principle-icon">📐</div>
+    <div class="principle-body">
+      <h3>Alignment creates organization</h3>
+      <p>All text elements align flush left within a consistent grid. Step numbers, step titles, and body text each occupy a defined column, creating visual relationships that let readers see the structure of each section at a glance rather than having to read every word to understand how things relate.</p>
+    </div>
+  </div>
+
+  <div class="principle-row">
+    <div class="principle-icon">🔲</div>
+    <div class="principle-body">
+      <h3>Grouping shows relationships</h3>
+      <p>Less white space between a heading and the content it labels signals that they belong together. More white space between sections signals a break. The consistent use of spacing in the step list, callout blocks, and section dividers helps readers understand the hierarchy of information without thinking about it.</p>
+    </div>
+  </div>
+
+  <div class="principle-row">
+    <div class="principle-icon">🔴</div>
+    <div class="principle-body">
+      <h3>Contrast establishes hierarchy and focus</h3>
+      <p>Red is used consistently for labels, active navigation, warnings, and key accents. Black serif type is used for headings. Lighter gray body text recedes visually. This contrast system lets readers immediately distinguish between types of content, such as a section heading versus a step explanation versus a warning callout.</p>
+    </div>
+  </div>
+
+  <div class="principle-row">
+    <div class="principle-icon">🔁</div>
+    <div class="principle-body">
+      <h3>Repetition creates unity</h3>
+      <p>Every page in this site uses the same navigation bar, footer, font pairing, color palette, and callout styles. Readers who learn the design on the Overview page can immediately orient themselves on the Video or Team pages. Consistency reduces cognitive load and builds trust in the document.</p>
+    </div>
+  </div>
+
+  <div class="principle-row">
+    <div class="principle-icon">♿</div>
+    <div class="principle-body">
+      <h3>Accessibility is a design requirement</h3>
+      <p>All images include descriptive alt text. The instructional video includes closed captions. Font sizes remain readable at default browser zoom. Color contrast between text and background meets legibility standards. Accessibility was treated as a baseline requirement, not an afterthought.</p>
+    </div>
+  </div>
+
+  <div class="principle-row">
+    <div class="principle-icon">📍</div>
+    <div class="principle-body">
+      <h3>Navigation supports non-linear use</h3>
+      <p>The sticky navigation bar, anchor links, and scroll-progress indicator all support the way real readers use instructional websites. A reader who wants to jump straight to the War section can do so in one click. The active link highlighting tells them exactly where they are in the document at all times.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">War: A Card Game Guide &mdash; WRT 307, Syracuse University</div>
+    <div class="suits"><span>♠</span><span>♥</span><span>♣</span><span>♦</span></div>
+  </div>
+</footer>
+
+<script>
+  const bar = document.getElementById('progress-bar');
+  window.addEventListener('scroll', () => {
+    const docH = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.width = (docH > 0 ? (window.scrollY / docH) * 100 : 0) + '%';
+  });
+</script>
+</body>
+</html>
