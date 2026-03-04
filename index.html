@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>How to Play War — A Complete Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div id="progress-bar"></div>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="#hero"><span>♠</span> War: The Card Game</a>
+    <ul class="nav-links">
+      <li><a href="#overview"  data-section="overview">Overview</a></li>
+      <li><a href="#setup"     data-section="setup">Setup</a></li>
+      <li><a href="#play"      data-section="play">Play</a></li>
+      <li><a href="#war"       data-section="war">War</a></li>
+      <li><a href="video.html">Video</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="memo.html">Memo</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════ HERO ═══════════════════════════════ -->
+<div id="hero" style="max-width:var(--max);margin:0 auto;padding:0 2rem;">
+  <div class="hero">
+    <div class="hero-text">
+      <div class="hero-eyebrow">A Complete Instructional Guide</div>
+      <h1>How to Play <em>War</em></h1>
+      <p class="hero-sub">A two-player card game of pure chance. No strategy required — just shuffle, deal, and see who reigns supreme.</p>
+      <div class="hero-meta">
+        <div class="meta-chip"><div class="dot"></div>2 Players</div>
+        <div class="meta-chip"><div class="dot"></div>Ages 6+</div>
+        <div class="meta-chip"><div class="dot"></div>15–45 min</div>
+        <div class="meta-chip"><div class="dot"></div>52 Cards</div>
+      </div>
+    </div>
+    <div class="hero-card">
+      <svg width="130" height="180" viewBox="0 0 130 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="2" width="126" height="176" rx="12" fill="white" stroke="#E2E2E2" stroke-width="1.5"/>
+        <text x="14" y="36" font-family="Georgia,serif" font-size="26" font-weight="700" fill="#C0392B">A</text>
+        <text x="14" y="58" font-family="Georgia,serif" font-size="20" fill="#C0392B">♥</text>
+        <text x="65" y="105" text-anchor="middle" font-family="Georgia,serif" font-size="52" fill="#C0392B">♥</text>
+        <text x="116" y="158" text-anchor="end" font-family="Georgia,serif" font-size="26" font-weight="700" fill="#C0392B" transform="rotate(180 65 150)">A</text>
+        <text x="116" y="180" text-anchor="end" font-family="Georgia,serif" font-size="20" fill="#C0392B" transform="rotate(180 65 162)">♥</text>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ OVERVIEW ══════════════════════════════ -->
+<section id="overview">
+  <div class="section-label">Before You Begin</div>
+  <h2>Game Overview</h2>
+  <div class="overview-grid" style="grid-template-columns:repeat(4,1fr);grid-template-rows:auto auto;">
+    <div class="overview-cell"><div class="label">Players</div><div class="value">2 (up to 4)</div></div>
+    <div class="overview-cell"><div class="label">Ages</div><div class="value">6 and up</div></div>
+    <div class="overview-cell"><div class="label">Equipment</div><div class="value">52 cards</div></div>
+    <div class="overview-cell" style="grid-row:span 2;padding:0;overflow:hidden;">
+      <img src="/photos/cards-cropped.jpg" alt="A deck of playing cards" style="width:100%;height:100%;object-fit:cover;display:block;" />
+    </div>
+    <div class="overview-cell"><div class="label">Skill level</div><div class="value">Beginner</div></div>
+    <div class="overview-cell"><div class="label">Objective</div><div class="value">Win all cards</div></div>
+    <div class="overview-cell"><div class="label">Duration</div><div class="value">15–45 min</div></div>
+  </div>
+
+  <h3>Card Ranks</h3>
+  <p>Only the face value of the card matters in War — suit has no effect. Cards rank from lowest to highest:</p>
+  <div class="rank-strip" style="width:102%;">
+    <div class="rank-card">2</div><div class="rank-arrow">→</div>
+    <div class="rank-card">3</div><div class="rank-arrow">→</div>
+    <div class="rank-card">4</div><div class="rank-arrow">→</div>
+    <div class="rank-card">5</div><div class="rank-arrow">→</div>
+    <div class="rank-card">6</div><div class="rank-arrow">→</div>
+    <div class="rank-card">7</div><div class="rank-arrow">→</div>
+    <div class="rank-card">8</div><div class="rank-arrow">→</div>
+    <div class="rank-card">9</div><div class="rank-arrow">→</div>
+    <div class="rank-card">10</div><div class="rank-arrow">→</div>
+    <div class="rank-card">J</div><div class="rank-arrow">→</div>
+    <div class="rank-card">Q</div><div class="rank-arrow">→</div>
+    <div class="rank-card">K</div><div class="rank-arrow">→</div>
+    <div class="rank-card ace">A</div>
+  </div>
+  <div class="callout note">
+    <span class="callout-icon">📌</span>
+    <span>Aces are always high in War — an Ace beats every other card, including Kings.</span>
+  </div>
+</section>
+
+<!-- ════════════════════════════ SETUP ════════════════════════════════ -->
+<section id="setup">
+  <div class="section-label">Part 1</div>
+  <h2>Setting Up the Game</h2>
+  <p>Complete the following steps in order before play begins. Skipping a step may result in an unequal deal or disorganized game.</p>
+
+  <div class="callout warn">
+    <span class="callout-icon">⚠️</span>
+    <span><strong>Important:</strong> Do not use a deck containing Jokers. Remove them before dealing — they have no defined rank in War and will cause confusion.</span>
+  </div>
+
+  <ol class="steps">
+    <li class="step-item">
+      <div class="step-number">1</div>
+      <div class="step-body">
+        <h3>Remove the Jokers</h3>
+        <p>Locate and remove both Joker cards from the deck. Set them aside — they are not used in War.</p>
+        <div style="display:flex;justify-content:center;margin-top:1.2rem;">
+          <img src="photos/joker-crossed.jpg" alt="Joker cards being removed" style="width:160px;object-fit:cover;border-radius:7px;border:1.5px solid var(--rule);" />
+        </div>
+      </div>
+    </li>
+    <li class="step-item">
+      <div class="step-number">2</div>
+      <div class="step-body">
+        <h3>Shuffle the deck</h3>
+        <p>Hold all 52 cards and shuffle them thoroughly at least three times to ensure a random distribution.</p>
+        <div style="display:flex;justify-content:center;margin-top:1.2rem;">
+          <img src="photos/cards-out2-cropped.jpg" alt="Joker cards being removed" style="width:500px;object-fit:cover;border-radius:7px;border:1.5px solid var(--rule);" />
+        </div>
+      </div>
+    </li>
+    <li class="step-item">
+      <div class="step-number">3</div>
+      <div class="step-body">
+        <h3>Designate a dealer</h3>
+        <p>Either player may deal. Decide between yourselves — flip a card to break a tie if needed.</p>
+      </div>
+    </li>
+    <li class="step-item">
+      <div class="step-number">4</div>
+      <div class="step-body">
+        <h3>Deal the cards face-down</h3>
+        <p>The dealer distributes all 52 cards one at a time, alternating between players (Player 1, Player 2, Player 1…), until each player holds exactly 26 cards. Do not look at your cards during dealing.</p>
+      </div>
+    </li>
+    <li class="step-item">
+      <div class="step-number">5</div>
+      <div class="step-body">
+        <h3>Form your draw pile</h3>
+        <p>Each player stacks their 26 cards into a single face-down pile in front of them. This pile is called your <em>draw pile</em>.</p>
+        <div class="callout note">
+          <span class="callout-icon">📌</span>
+          <span>Keep your draw pile face-down at all times. Looking at upcoming cards is not permitted.</span>
+        </div>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<!-- ═══════════════════════════ PLAY ══════════════════════════════════ -->
+<section id="play">
+  <div class="section-label">Part 2</div>
+  <h2>Playing a Round</h2>
+  <p>A "round" consists of each player flipping one card. Repeat these steps continuously until the game ends.</p>
+
+  <ol class="steps">
+    <li class="step-item">
+      <div class="step-number">6</div>
+      <div class="step-body">
+        <h3>Flip your top card</h3>
+        <p>Simultaneously, each player takes the top card from their draw pile and places it face-up in the center of the table between both players.</p>
+      </div>
+    </li>
+    <li class="step-item">
+      <div class="step-number">7</div>
+      <div class="step-body">
+        <h3>Compare the two cards</h3>
+        <p>Look at the rank of each face-up card and identify which is higher. Refer to the Card Ranks table in the Overview section above if needed.</p>
+        <div class="example-grid">
+          <div class="example-card">
+            <div class="example-label">Player 1 Wins</div>
+            <div class="example-faces">
+              <div class="mini-card">K<br/>♠</div>
+              <div class="vs-text">vs</div>
+              <div class="mini-card red-suit">7<br/>♥</div>
+            </div>
+            <div class="example-result">King beats 7 → Player 1 takes both cards.</div>
+          </div>
+          <div class="example-card">
+            <div class="example-label">Player 2 Wins</div>
+            <div class="example-faces">
+              <div class="mini-card red-suit">5<br/>♦</div>
+              <div class="vs-text">vs</div>
+              <div class="mini-card">A<br/>♣</div>
+            </div>
+            <div class="example-result">Ace beats 5 → Player 2 takes both cards.</div>
+          </div>
+        </div>
+        <div class="callout note" style="margin-top:1.2rem;">
+          <span class="callout-icon">📌</span>
+          <span>If both players flip cards of equal rank, a tie occurs — proceed to the War section below.</span>
+        </div>
+      </div>
+    </li>
+    <li class="step-item">
+      <div class="step-number">8</div>
+      <div class="step-body">
+        <h3>Award the cards</h3>
+        <p>The player whose card is higher wins the round. That player collects both face-up cards and places them face-down at the bottom of their own draw pile. The winner may add the cards in any order.</p>
+      </div>
+    </li>
+    <li class="step-item">
+      <div class="step-number">9</div>
+      <div class="step-body">
+        <h3>Continue</h3>
+        <p>Begin the next round immediately. Repeat Steps 6–8 until a tie occurs or the game ends.</p>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<!-- ════════════════════════════ WAR ══════════════════════════════════ -->
+<section id="war">
+  <div class="section-label">Part 3</div>
+  <h2>Resolving a Tie — "War"</h2>
+  <p>When both players flip cards of equal rank, a tie occurs. The tie-breaking procedure is called <strong>War</strong>. Follow these steps exactly.</p>
+
+  <ol class="steps">
+    <li class="step-item">
+      <div class="step-number">10</div>
+      <div class="step-body">
+        <h3>Leave the tied cards on the table</h3>
+        <p>Do not collect them yet. The two tied cards remain face-up in the center of the table.</p>
+      </div>
+    </li>
+    <li class="step-item">
+      <div class="step-number">11</div>
+      <div class="step-body">
+        <h3>Each player deals three cards face-down</h3>
+        <p>From your draw pile, take the next three cards off the top and place them face-down on top of your tied card. These are played blind — neither player sees them.</p>
+        <div class="callout warn">
+          <span class="callout-icon">⚠️</span>
+          <span><strong>Insufficient cards:</strong> If you have fewer than four cards when War is declared, see the special rules below.</span>
+        </div>
+      </div>
+    </li>
+    <li class="step-item">
+      <div class="step-number">12</div>
+      <div class="step-body">
+        <h3>Each player flips a fourth card face-up</h3>
+        <p>After placing the three face-down cards, each player flips one additional card face-up beside them. This is the new <em>battle card</em>.</p>
+      </div>
+    </li>
+    <li class="step-item">
+      <div class="step-number">13</div>
+      <div class="step-body">
+        <h3>Compare the new battle cards</h3>
+        <p>The player with the higher face-up card wins all cards on the table — both tied cards, all six face-down cards, and the two new face-up cards (10 cards total).</p>
+        <div class="callout note">
+          <span class="callout-icon">📌</span>
+          <span>If the two battle cards also tie, repeat the entire War procedure immediately from Step 11.</span>
+        </div>
+      </div>
+    </li>
+  </ol>
+
+  <h3 style="margin-top:2.4rem;">Insufficient Cards During War</h3>
+  <p style="margin-bottom:1rem;">Apply whichever scenario fits your situation:</p>
+  <div class="example-grid">
+    <div class="example-card">
+      <div class="example-label">Scenario A — One card remaining</div>
+      <p style="font-size:0.85rem;margin:0;">If a player has only one card left when War is declared, that player flips their single remaining card as the battle card. No face-down cards are played. Compare the two battle cards normally.</p>
+    </div>
+    <div class="example-card">
+      <div class="example-label">Scenario B — Runs out mid-War</div>
+      <p style="font-size:0.85rem;margin:0;">If a player cannot place any cards at all, that player <strong>loses the game immediately</strong>. They have run out of cards and can no longer participate.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════ END GAME ═════════════════════════════ -->
+<section id="end">
+  <div class="section-label">Part 4</div>
+  <h2>Ending the Game</h2>
+
+  <ol class="steps">
+    <li class="step-item">
+      <div class="step-number">14</div>
+      <div class="step-body">
+        <h3>Standard win condition</h3>
+        <p>The game ends when one player collects all 52 cards. That player is the winner.</p>
+      </div>
+    </li>
+    <li class="step-item">
+      <div class="step-number">15</div>
+      <div class="step-body">
+        <h3>Opponent runs out of cards</h3>
+        <p>The game also ends the moment one player's draw pile is completely empty and they cannot flip a card to begin a new round. The player who still holds cards wins.</p>
+        <div class="callout note">
+          <span class="callout-icon">📌</span>
+          <span>Games of War can last 15–45+ minutes. To set a time limit, agree on a duration before starting — the player holding more cards when time expires wins.</span>
+        </div>
+      </div>
+    </li>
+  </ol>
+
+  <h3 style="margin-top:2.4rem;">Quick-Reference Checklist</h3>
+  <p style="margin-bottom:1rem;">Use this checklist once you're familiar with the full rules.</p>
+  <ul class="checklist">
+    <li class="check-item"><div class="check-box"></div>Remove Jokers. Shuffle the 52-card deck.</li>
+    <li class="check-item"><div class="check-box"></div>Deal 26 cards face-down to each player.</li>
+    <li class="check-item"><div class="check-box"></div>Form face-down draw piles.</li>
+    <li class="check-item"><div class="check-box"></div>Both players flip their top card simultaneously each round.</li>
+    <li class="check-item"><div class="check-box"></div>Higher card wins both cards; winner places them at the bottom of their pile.</li>
+    <li class="check-item"><div class="check-box"></div>On a tie: place 3 cards face-down, then flip a 4th face-up as the battle card.</li>
+    <li class="check-item"><div class="check-box"></div>Higher battle card wins all 10 cards from a War round.</li>
+    <li class="check-item"><div class="check-box"></div>First player to collect all 52 cards wins.</li>
+  </ul>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">War: A Card Game Guide &mdash; WRT 307, Syracuse University</div>
+    <div class="suits"><span>♠</span><span>♥</span><span>♣</span><span>♦</span></div>
+  </div>
+</footer>
+
+<script>
+  // ── Progress bar ──
+  const bar = document.getElementById('progress-bar');
+
+  // ── Scroll-spy: highlight nav link for current section ──
+  const spySections = ['overview', 'setup', 'play', 'war'];
+  const navLinks = document.querySelectorAll('.nav-links a[data-section]');
+
+  function getActiveSection() {
+    // Trigger point: 1/3 down the viewport
+    const trigger = window.scrollY + window.innerHeight / 3;
+    let active = null;
+    for (const id of spySections) {
+      const el = document.getElementById(id);
+      if (el && el.offsetTop <= trigger) active = id;
+    }
+    return active;
+  }
+
+  function onScroll() {
+    // Progress bar
+    const docH = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.width = (docH > 0 ? (window.scrollY / docH) * 100 : 0) + '%';
+
+    // Active nav link
+    const active = getActiveSection();
+    navLinks.forEach(link => {
+      link.classList.toggle('active', link.dataset.section === active);
+    });
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll(); // initialise on load
+</script>
+</body>
+</html>

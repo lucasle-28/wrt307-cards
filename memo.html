@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>How to Play War — Design Memo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div id="progress-bar"></div>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html"><span>♠</span> War: The Card Game</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Overview</a></li>
+      <li><a href="index.html#setup">Setup</a></li>
+      <li><a href="index.html#play">Play</a></li>
+      <li><a href="index.html#war">War</a></li>
+      <li><a href="video.html">Video</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="memo.html" class="active">Memo</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section>
+  <div class="section-label">Design Memo</div>
+  <h2>Professional Memo</h2>
+
+  <div class="memo-block">
+    <div class="memo-header">
+      <div class="memo-to">
+        <div><span>TO:</span> Instructor, WRT 307</div>
+        <div><span>FROM:</span> [Your Team Name]</div>
+        <div><span>DATE:</span> March 6, 2025</div>
+        <div><span>RE:</span> How to Play War — Design &amp; Process Memo</div>
+      </div>
+      <div class="memo-tag">Design Memo</div>
+    </div>
+
+    <!-- ── Paragraph 1 ── -->
+    <div class="memo-section-title">Purpose &amp; Definition of the Instructions</div>
+    <p>These instructions explain how to play War, a two-player card game of chance. They are designed to help any reader — regardless of prior experience — set up the game, play rounds confidently, resolve tie-breaking "War" scenarios, and determine a winner. The instructions follow the five-element superstructure for instructions described in Chapter 27 (p. 459): an introduction, a description of materials needed, step-by-step directions, coverage of edge cases, and a troubleshooting/FAQ table. Our goal was to answer the six questions readers most commonly bring to instructions: what will this help me do, what do I need to know beforehand, what materials are required, what exactly do I do, and how do I fix problems (Ch. 27, p. 458).</p>
+
+    <!-- ── Paragraph 2 ── -->
+    <div class="memo-section-title">Audience Analysis &amp; Document Design</div>
+    <p>Our primary audience is anyone interested in learning War for the first time — beginners of all ages, including younger players (6+) and casual adult players. Because this audience cannot be assumed to possess any prior card-game knowledge, we wrote in plain, imperative language ("Flip your top card," "Compare the two cards") as recommended in Chapter 27 (p. 465), using active voice and the imperative mood throughout. We deliberately avoided jargon and defined game-specific terms like "draw pile" and "battle card" in context. For document design, we followed the alignment, grouping, and contrast principles outlined in Chapter 14 (pp. 267–270). Related elements — step numbers, step titles, and body text — are consistently aligned flush left within a clear grid, creating the visual relationships that signal organization to readers at a glance (Ch. 14, p. 267). White space is used generously between steps so that readers can locate their place after looking away to perform an action, a critical concern in instructional writing (Ch. 27, p. 460). Warning and note callouts use contrast — a red left-border and tinted background — to make safety-relevant content stand out immediately, consistent with the principle that good design helps readers notice highly important content (Ch. 14, p. 261). The sticky navigation bar with anchor links and the reading progress bar address the non-linear reading behavior that Ch. 27 (p. 459) identifies as central to how readers use instructions: they do not read straight through but instead scan, jump, and return.</p>
+
+    <!-- ── Paragraph 3 ── -->
+    <div class="memo-section-title">Usability Testing</div>
+    <p>[Replace this paragraph with your team's actual usability testing findings.] On March 2, our team conducted a peer walkthrough in which classmates attempted to follow the instructions to play a round of War. We observed where readers hesitated, misread step order, or asked clarifying questions. Key findings included: (1) readers initially skipped the Card Ranks section before playing, leading to confusion during a tie round, which led us to move rank information to the Overview and add a visual rank strip with hover effects; (2) the original warning about Jokers was buried mid-paragraph — we elevated it to a styled callout block immediately before the setup steps, in line with Ch. 27's guidance to place warnings before the action they refer to (p. 464); and (3) users found the example cards in Part 2 ("Player 1 Wins / Player 2 Wins") the most immediately useful element on the page, confirming Ch. 14's assertion that graphics help readers understand information faster than text alone (p. 261).</p>
+
+    <!-- ── Paragraph 4 ── -->
+    <div class="memo-section-title">Collaboration &amp; Co-Writing Narrative</div>
+    <p>[Replace this paragraph with your team's actual collaboration narrative.] Our team divided work into three phases: research and drafting, design, and testing. During drafting, we used a shared document to co-write the step-by-step directions, with each member responsible for one section (Setup, Playing a Round, War, and End Conditions). We held two synchronous review sessions to reconcile differences in tone and step granularity — an important process because, as Ch. 27 notes, instructions must give readers only enough information to perform the next step (p. 465), and our early drafts were often too verbose. The design phase was led by one member but reviewed collectively against the Ch. 14 grid and contrast principles. The most effective practice was reading each step aloud and asking "would someone new to this game know exactly what to do?" The least effective was asynchronous commenting on layout — visual design decisions required real-time discussion to resolve efficiently.</p>
+
+    <!-- ── Paragraph 5 ── -->
+    <div class="memo-section-title">AI Use, Limitations &amp; Assessment</div>
+    <p>[Replace this paragraph with your team's actual AI use assessment.] We used AI tools during two phases of this project: initial outlining and drafting clarity checks. For outlining, we prompted an AI model with the game's rules and asked it to generate a hierarchical step list. The AI produced a reasonable draft but consistently conflated the "three face-down cards" step with the "fourth face-up battle card" step in the War procedure — a confusion that would cause readers to make errors. This confirmed Ch. 27's warning that instructions must be user-tested rather than assumed to be accurate (p. 460). We found AI most helpful for generating alternative phrasings of dense steps and for suggesting plain-language synonyms, which aligns with its strengths in editing rather than original instructional design. Its biggest limitation was an inability to reason about what a non-expert reader would actually find confusing — that judgment required human usability testing. Overall, AI served as a useful drafting assistant but not a substitute for rhetorical judgment, audience analysis, or the iterative revision process that Ch. 27 frames as essential to effective instructions (p. 460).</p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">War: A Card Game Guide &mdash; WRT 307, Syracuse University</div>
+    <div class="suits"><span>♠</span><span>♥</span><span>♣</span><span>♦</span></div>
+  </div>
+</footer>
+
+<script>
+  const bar = document.getElementById('progress-bar');
+  window.addEventListener('scroll', () => {
+    const pct = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+    bar.style.width = pct + '%';
+  });
+</script>
+</body>
+</html>

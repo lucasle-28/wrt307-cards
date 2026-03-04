@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>How to Play War — Our Team</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div id="progress-bar"></div>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html"><span>♠</span> War: The Card Game</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Overview</a></li>
+      <li><a href="setup.html">Setup</a></li>
+      <li><a href="play.html">Play</a></li>
+      <li><a href="war.html">War</a></li>
+      <li><a href="video.html">Video</a></li>
+      <li><a href="team.html" class="active">Team</a></li>
+      <li><a href="memo.html">Memo</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section>
+  <div class="section-label">Our Team</div>
+  <h2>Meet the Authors</h2>
+  <p>We're a group of students from WRT 307 at Syracuse University. Each of us contributed to the research, writing, usability testing, and design of this guide.</p>
+
+  <!-- Top row: 3 members -->
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem;margin-top:2rem;">
+
+    <!-- ── Riley Worrall ── -->
+    <div class="bio-card">
+      <div class="bio-avatar">
+        <img src="photos/riley.jpg" alt="Riley Worrall" />
+      </div>
+      <div class="bio-name">Riley Worrall</div>
+      <div class="bio-role">Information Management & Technology / Management</div>
+      <p class="bio-text">Riley is a third-year at Syracuse studying IM&T and Management. She co-wrote the instructions and appeared in the instructional video, bringing her background in communicating technical information clearly to the project.</p>
+    </div>
+
+    <!-- ── Justin Martinez ── -->
+    <div class="bio-card">
+      <div class="bio-avatar">
+        <img src="photos/justin.png" alt="Justin Martinez" />
+      </div>
+      <div class="bio-name">Justin Martinez</div>
+      <div class="bio-role">Applied Data Analytics</div>
+      <p class="bio-text">Justin is a junior from New York City studying Applied Data Analytics. He authored the design memo, putting his ability to break down complex ideas simply into a clear, professional reflection on the team's process and decisions.</p>
+    </div>
+
+    <!-- ── Kevin Wood ── -->
+    <div class="bio-card">
+      <div class="bio-avatar">
+        <img src="photos/kevin.jpg" alt="Kevin Wood" />
+      </div>
+      <div class="bio-name">Kevin Wood</div>
+      <div class="bio-role">Contract Management / Defense Procurement</div>
+      <p class="bio-text">Kevin is an early-career contract management professional with a background in defense procurement. He co-wrote the instructions and provided the voiceover for the instructional video, bringing precision and clarity to both.</p>
+    </div>
+
+  </div>
+
+  <!-- Bottom row: 2 members centered -->
+  <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1.6rem;margin-top:1.6rem;max-width:420px;margin-left:auto;margin-right:auto;">
+
+    <!-- ── Kyle Grimaldi ── -->
+    <div class="bio-card">
+      <div class="bio-avatar">
+        <img src="photos/kyle.png" alt="Kyle Grimaldi" />
+      </div>
+      <div class="bio-name">Kyle Grimaldi</div>
+      <div class="bio-role">Finance & Business Analytics</div>
+      <p class="bio-text">Kyle is a senior studying Finance and Business Analytics. He produced and appeared in the instructional video, using his video editing skills to create a clear visual walkthrough of the game.</p>
+    </div>
+
+    <!-- ── Lucas Le ── -->
+    <div class="bio-card">
+      <div class="bio-avatar">
+        <img src="photos/lucas.jpg" alt="Lucas Le" />
+      </div>
+      <div class="bio-name">Lucas Le</div>
+      <div class="bio-role">Computer Engineering</div>
+      <p class="bio-text">Lucas is a Computer Engineering student at Syracuse focused on FPGA development and embedded systems. He designed and built this website, creating a clean, accessible experience for every type of user.</p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">War: A Card Game Guide &mdash; WRT 307, Syracuse University</div>
+    <div class="suits"><span>♠</span><span>♥</span><span>♣</span><span>♦</span></div>
+  </div>
+</footer>
+
+<script>
+  const bar = document.getElementById('progress-bar');
+  window.addEventListener('scroll', () => {
+    const pct = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+    bar.style.width = pct + '%';
+  });
+</script>
+</body>
+</html>
